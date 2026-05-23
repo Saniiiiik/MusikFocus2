@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicFocus — Музыка для учёбы</title>
+    <link rel="stylesheet" href="https://saniiiiik.github.io/MusikFocus/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Finlandica+Headline:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">MusicFocus</div>
+        <div>
+            <a href="#genres" id="genres" class="header_logo">Жанры</a>
+            <a href="#playlist" id="playlist" class="header_logo">Плейлист</a>
+        </div>
+        <div><button id="theme-toggle" class="btn"><img src="Tema_solchr_i_luna.png" alt="Тема" class="image"></button></div>
+    </header>
+    <main>
+        <section id="hero">
+            <h1>Сосредоточься на учёбе</h1>
+            <p>Подборка треков для максимальной концентрации</p>
+            <button id="play-all" class="hero_btn">Начать прослушивание</button>
+        </section>
+
+        <section id="genres">
+            <h2 class="hero_h2">Выберите жанр</h2>
+            <div class="genre-buttons">
+                <button class="genre-btn active" data-genre="all">Все</button>
+                <button class="genre-btn" data-genre="Pop">Pop</button>
+                <button class="genre-btn" data-genre="electronic">Electronic</button>
+                <button class="genre-btn" data-genre="Pank">Pank</button>
+                <button class="genre-btn" data-genre="Xип-хоп">Хип-хоп</button>
+                <button class="genre-btn" data-genre="Данс-поп">Данс-поп</button>
+            </div>
+        </section>
+
+        <section id="player">
+            <div id="visualizer"></div>
+            <div class="hero_audio">
+                <audio id="audio-player" controls>
+                    <source src="track1.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </section>
+
+        <section id="playlist">
+            <h2>Плейлист</h2>
+            <ul id="track-list">
+                <!-- Треки будут добавлены через JS -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="phone-input-container">
+            <label for="phone-number">Введите номер телефона:</label>
+            <input
+            type="tel"
+            id="phone-number"
+            name="phone"
+            placeholder="+7 (XXX) XXX-XX-XX"
+            pattern="[\+]?[0-9\s\-\(\)]{10,15}"
+            required
+            >
+            <button type="button" id="submit-phone">Отправить</button>
+        </div>
+        <p>&copy; 2026 MusicFocus. Все права защищены.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

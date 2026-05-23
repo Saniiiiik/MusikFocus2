@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #1A202C;
+    --text-color: #E2E8F0;
+    --btn-text: #d5e2fa;
+    --audio-bg: #252b36;
+}
+
+[data-theme="light"] {
+    --bg-color: #E2E8F0;
+    --text-color: #1a202c;
+    --btn-text: #1A202C;
+    --audio-bg: #d5e2fa;
+}
+
+body {
+    font-family: "Finlandica Headline";
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background 0.3s;
+}
+header {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    border-bottom: 1px solid #4A5568;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+.dark-theme{
+    background: #d5e2fa;
+    color: #35373a;
+}
+.btn{
+    width: 70px;
+    border: 1px solid;
+    border-radius: 6px;
+    transition: background 0.3s;
+    margin-top: 8px;
+    margin-left: 20px;
+}
+.header_logo{
+    font-size: 25px;
+    text-decoration: none;
+    color: var(--btn-text);
+    margin: 20px;
+}
+.image{
+    width: 50px;
+}
+.logo {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #48BB78;
+}
+
+#hero {
+    text-align: center;
+    padding: 4rem 5%;
+}
+
+#hero h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.hero_h2{
+    text-align: center;
+}
+.hero_btn{
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    background-color: #1A202C;
+    color: #d5e2fa;
+}
+.genre-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.genre-btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    background: #4A5568;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.genre-btn:hover, .genre-btn.active {
+    background: #48BB78;
+}
+
+#visualizer {
+    width: 100%;
+    height: 100px;
+    background: #2D3748;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+#track-list {
+    display: flexbox;
+    list-style: none;
+}
+
+.track {
+    padding: 1rem;
+    border-bottom: 1px solid #4A5568;
+    cursor: pointer;
+}
+.hero_audio{
+    text-align: center;
+}
+
+.track:hover {
+    background: #2D3748;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    border-top: 1px solid #4A5568;
+}
+
+
+
+.phone-input-container {
+  padding: 20px;
+  text-align: center;
+  background-color: var(--bg-color);
+  border: 1px solid #4A5568;
+  border-radius: 10px;
+}
+
+.phone-input-container label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+#phone-number {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #4A5568;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+#submit-phone {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#submit-phone:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+
+#player {
+    background-color: var(--audio-bg);
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    margin: 2rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+#visualizer {
+    width: 100%;
+    height: 120px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(72, 187, 120, 0.2);
+}
+
+/* Стилизация стандартного аудиоплеера */
+.hero_audio audio {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+/* Кастомизация элементов управления аудио (для WebKit-браузеров) */
+.hero_audio audio::-webkit-media-controls-panel {
+    background: rgba(45, 55, 72, 0.8);
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+}
+
+.hero_audio audio::-webkit-media-controls-play-button {
+    filter: brightness(0) invert(1);
+}
+
+.hero_audio audio::-webkit-media-controls-volume-slider,
+.hero_audio audio::-webkit-media-controls-timeline {
+    accent-color: #48bb78;
+}
+
+.hero_audio audio::-webkit-media-controls-current-time-display,
+.hero_audio audio::-webkit-media-controls-time-remaining-display {
+    color: white;
+}
+
+/* Дополнительные стили для лучшей видимости */
+.hero_audio {
+    position: relative;
+}
+
+.hero_audio::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    #player {
+        padding: 1rem;
+    }
+    
+    #visualizer {
+        height: 80px;
+        margin-bottom: 1rem;
+    }
+}
+
+/* Анимация для визуализатора (если он анимированный) */
+#visualizer.animated {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 20px rgba(72, 187, 120, 0.3);
+    }
+    50% {
+        box-shadow: 0 0 40px rgba(72, 187, 120, 0.6);
+    }
+    100% {
+        box-shadow: 0 0 20px rgba(72, 187, 120, 0.3);
+    }
+}
+

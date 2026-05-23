@@ -1,14 +1,14 @@
 // Данные треков
 const tracks = [
-    { id: 1, title: "Она танцует под шадэ", genre: "Pop", src: "https://rus.hitmoz.org/get/cuts/0b/b5/0bb5dd3081f1cd4b0bf544ab4a488a9d/81415262/Indiya_by_-_Ona_tancuet_pod_shadje_b128f0d141.mp3" },
-    { id: 2, title: "Лесник", genre: "фолк-панк", src: "https://rus.hitmoz.org/get/cuts/8e/fa/8efaf32e8e754177c2d9d463117ce4bf/62571704/Korol_i_SHut_-_Lesnik_b128f0d192.mp3" },
-    { id: 3, title: "Где прошла ты", genre: "хип-хоп", src: "https://rus.hitmoz.org/get/cuts/c4/40/c440c380429618861a6265351aa09dc5/75704918/Kravc_Gio_Pika_-_Gde_proshla_ty_b128f0d168.mp3" },
-    { id: 4, title: "КАК MOMMY", genre: "Pop", src: "https://rus.hitmoz.org/get/cuts/26/bb/26bb81df19a82a0c513d136d08926ae4/75305573/INSTASAMKA_-_KAK_MOMMY_b128f0d130.mp3" },
-    { id: 5, title: "Хищница", genre: "Pop", src: "https://rus.hitmoz.org/get/cuts/1d/9a/1d9ac738c31989d619e203e51e495d9e/76011058/Islam_Itlyashev_-_KHishhnica_b128f0d249.mp3" },
-    { id: 6, title: "Black Samurai", genre: " танцевальная", src: "https://rus.hitmoz.org/get/cuts/21/90/21905d77ee306918caee2b87bc7f2c72/67944226/WYR_GEMI_-_Black_Samurai_b128f0d199.mp3" },
-    { id: 7, title: "Птичка", genre: "Pop", src: "https://rus.hitmoz.org/get/cuts/42/b6/42b66c1959dd9cbde9d9d1ddf16f28e0/72965451/HammAli_Navai_-_Ptichka_b128f0d191.mp3" },
-    { id: 8, title: "Пьяный туман", genre: "Pop", src: "https://rus.hitmoz.org/get/cuts/8d/82/8d825e0326ffce69423040c040f07534/62788609/GAYAZOV_BROTHER_-_Pyanyjj_tuman_b128f0d234.mp3" },
-    { id: 9, title: "МАЛИНОВАЯ ЛАДА", genre: "Pop", src: "https://rus.hitmoz.org/get/cuts/a5/fd/a5fdd64413869435e28a2c2d7e31a8ab/73214200/GAYAZOV_BROTHER_-_MALINOVAYA_LADA_b128f0d213.mp3" }
+    { id: 1, title: "Она танцует под шадэ", genre: "Pop", src: "https://rus.hitmoz.org/get/cuts/0b/b5/0bb5dd3081f1cd4b0bf544ab4a488a9d/81415262/Indiya_by_-_Ona_tancuet_pod_shadje_b128f0d141.mp3"},
+    { id: 2, title: "Лесник", genre: "фолк-панк", src: "https://rus.hitmoz.org/get/cuts/8e/fa/8efaf32e8e754177c2d9d463117ce4bf/62571704/Korol_i_SHut_-_Lesnik_b128f0d192.mp3"},
+    { id: 3, title: "Где прошла ты", genre: "хип-хоп", src: "https://rus.hitmoz.org/get/cuts/c4/40/c440c380429618861a6265351aa09dc5/75704918/Kravc_Gio_Pika_-_Gde_proshla_ty_b128f0d168.mp3"},
+    { id: 4, title: "КАК MOMMY", genre: "Pop", src: "https://rus.hitmoz.org/get/cuts/26/bb/26bb81df19a82a0c513d136d08926ae4/75305573/INSTASAMKA_-_KAK_MOMMY_b128f0d130.mp3"},
+    { id: 5, title: "Хищница", genre: "Pop", src: "https://rus.hitmoz.org/get/cuts/1d/9a/1d9ac738c31989d619e203e51e495d9e/76011058/Islam_Itlyashev_-_KHishhnica_b128f0d249.mp3"},
+    { id: 6, title: "Black Samurai", genre: " танцевальная", src: "https://rus.hitmoz.org/get/cuts/21/90/21905d77ee306918caee2b87bc7f2c72/67944226/WYR_GEMI_-_Black_Samurai_b128f0d199.mp3"},
+    { id: 7, title: "Птичка", genre: "Pop", src: "https://rus.hitmoz.org/get/cuts/42/b6/42b66c1959dd9cbde9d9d1ddf16f28e0/72965451/HammAli_Navai_-_Ptichka_b128f0d191.mp3"},
+    { id: 8, title: "Пьяный туман", genre: "Pop", src: "https://rus.hitmoz.org/get/cuts/8d/82/8d825e0326ffce69423040c040f07534/62788609/GAYAZOV_BROTHER_-_Pyanyjj_tuman_b128f0d234.mp3"},
+    { id: 9, title: "МАЛИНОВАЯ ЛАДА", genre: "Pop", src: "https://rus.hitmoz.org/get/cuts/a5/fd/a5fdd64413869435e28a2c2d7e31a8ab/73214200/GAYAZOV_BROTHER_-_MALINOVAYA_LADA_b128f0d213.mp3"}
 ];
 
 
